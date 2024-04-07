@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: a;
+    src: url(src/Ubuntu-Italic.ttf);
+}
+body, html{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 85%;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+#input-box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input-box input{
+    height: 35px;
+    width: 50%;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+#input-box button{
+    height: 35px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+#input-box button:hover{
+    background-color: rgb(20, 217, 217);
+}
+#input-box button i{
+    color: black;
+    cursor: pointer;
+}
+#weather-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#weather-box h2{
+    padding-top: 10px;
+    font-size: 30px;
+}
+#weatherIcon{
+ width: 150px;
+ height: 150px;
+ margin-top: 50px;
+ /* background-color: black; */
+}
+#weatherIcon img{
+    height: 70px;
+    width: 70px;
+    color: black;
+}
+#weather-box #temp{
+    margin-top: 30px;
+    font-size: 40px;
+}
+#s-c{
+    display: flex;
+    margin-top: 70px;
+}
+#humid{
+    width: 50%;
+    font-size: 30px;
+    padding-left: 23px;
+}
+#wind{
+    width: 50%;
+    font-size: 28px;
+    padding-left: 340px;
+}
+

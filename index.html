@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather Forcast App</title>
+</head>
+<body>
+    <div id="container">
+        <div id="input-box">
+            <input id="input-value" type="text" placeholder="Enter your location...">
+            <button id="submit" type="submit" onclick="fetchCityData(), getWeatherIcon()"><i class='bx bx-search-alt'></i></button>
+        </div>
+
+        <div id="weather-box">
+            <h2 id="city-name">City</h2>
+            <div id="weatherIcon"></div>
+            <span id="temp">Temperature : <span id="temperature"></span></span>
+        </div>
+
+        <div id="s-c">
+            <div id="humid">
+                <span><i class='bx bx-water' ></i> Humidity - </span>
+                <span id="humidity"></span>
+            </div>
+            <div id="wind">
+                <span><i class='bx bx-wind' ></i> Wind speed - </span>
+                <span id="wind-speed"></span>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
